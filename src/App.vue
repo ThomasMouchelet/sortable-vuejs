@@ -1,17 +1,19 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="row">
+      <Course />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Course from './components/Course'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Course
   }
 }
 </script>
@@ -24,5 +26,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15%;
 }
 </style>
